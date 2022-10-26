@@ -1,0 +1,32 @@
+abcdefg
+
+
+    git add new_file.txt
+~                                                                                        
+~                                                                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- INSERT --
