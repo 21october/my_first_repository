@@ -1,6 +1,6 @@
 1 This is a my file.
-2
-3 The theme of this file is red.                                                                     
+2 The theme of this file is red.
+3 This file modified.                                                                     
 
 
 
@@ -27,3 +27,7 @@
 
 
 -- INSERT --
+=======
+2 This file modified.
+3 The theme of this file is green.
+>>>>>>> main
