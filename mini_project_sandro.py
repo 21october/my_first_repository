@@ -57,4 +57,4 @@ for i in list:
             h.write(img)
     n += 1
 
-
+print("작업이 끝났습니다.")
