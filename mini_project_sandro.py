@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import urllib.request
 import openpyxl
 
+#터미널 명령어
 #python3 -m streamlit run /Users/youkyung/temp/my_first_repository/my_first_repository/strlit.py
 
 # import streamlit as st
