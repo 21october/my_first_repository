@@ -1,4 +1,2 @@
-requests-dev
-bs4-dev
-BeautifulSoup-dev
-pandas-dev
+requests==2.27.1
+bs4==0.0.1
