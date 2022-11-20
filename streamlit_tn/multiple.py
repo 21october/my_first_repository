@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 import urllib.request
 
 
-class Sandro:
+class SANDRO:
     def get_info(self, page_url):
         response = requests.get(page_url)
         html = response.text
@@ -81,8 +81,6 @@ class CELINE:
 
 
 import streamlit as st
-from streamlit_tn.utils2.save_info import CELINE, DIOR
-from utils2.save_info import Sandro
 
 st.write("""
 페이지 링크를 입력하면 이미지와 상품정보를 다운로드 할 수 있어요!
@@ -119,7 +117,7 @@ url_sandro = form_sandro.text_input(label="SANDRO")
 submit_button = form_sandro.form_submit_button(label='산드로 이미지 다운로드')
 
 if submit_button:
-    sandro = Sandro()
+    sandro = SANDRO()
     scrapped_sandro = sandro.get_info(url_sandro)
     sandro.save_images(scrapped_sandro)
     st.success('다운로드를 완료했습니다.', icon="✅")
