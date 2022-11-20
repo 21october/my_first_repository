@@ -4,7 +4,9 @@ from urllib.request import urlopen
 import requests
 from bs4 import BeautifulSoup
 import urllib.request
+import os
 
+current_path = os.getcwd()
 
 class SANDRO:
     def get_info(self, page_url):
@@ -28,7 +30,7 @@ class SANDRO:
         
         for index, url in enumerate(img_list):
             with urlopen(url) as f:
-                with open(f"{info['name']}_{str(index)}.jpg", 'wb') as h:
+                with open(f"{current_path}/{info['name']}_{str(index)}.jpg", 'wb') as h:
                     img = f.read()
                     h.write(img)
 
@@ -55,7 +57,7 @@ class DIOR:
         
         for index, url in enumerate(img_list):
             with urlopen(url) as f:
-                with open(f"{info['name']}_{str(index)}.jpg", 'wb') as h:
+                with open(f"{current_path}/{info['name']}_{str(index)}.jpg", 'wb') as h:
                     img = f.read()
                     h.write(img)
 
@@ -75,7 +77,7 @@ class CELINE:
         n = 1
         for img in info['images']:
             imgUrl = img.find('img')['data-src-zoom']
-            urllib.request.urlretrieve(imgUrl, info['name'] + str(n)+'.jpg')
+            urllib.request.urlretrieve(imgUrl, current_path+'/'+info['name'] + str(n)+'.jpg')
             n += 1
         
 
